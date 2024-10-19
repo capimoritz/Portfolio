@@ -1,0 +1,252 @@
+/* Este repositório base fué creado para ayudarte en caso que no sepas como comenzar, recuerda que el portafolio es tu carta de presentación y debes darle tu cara, por eso te invitamos a personalizarlo según tu estilo y preferencias no te limites apenas al layout propuesto en figma  
+*/
+:root {
+    --color-de-fondo: #5a9dd4;
+    --color-de-fondo-menu: #1edaf3;
+    --color-de-link: #000000;
+}
+
+body {
+    background-color: var(--color-de-fondo);
+    font-family: 'Exo 2', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    line-height: 1.6;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-de-link);
+}
+
+/* ------------------------------ Sección Menú -------------------------------*/
+.cabecera__titulo {
+    font-size: 25vw; /* El tamaño será el 10% del ancho de la pantalla */
+    font-weight: bold; /* Para dar más protagonismo */
+    color: var(--color-principal); /* Puedes cambiar esto según tus preferencias */
+    text-align: center; /* Centramos el texto */
+    margin: 0; /* Elimina el margen para mejor ajuste */
+    line-height: 1.2; /* Espacio entre líneas */
+}
+
+.cabecera__logo {
+    max-width: 50vw; /* Ajuste para pantallas pequeñas */
+}
+
+.cabecera__titulo {
+    font-size: clamp(48px, 10vw, 96px); /* Define un tamaño mínimo (48px) y máximo (96px) */
+    text-align: center;
+}
+
+.navegacion__lista {
+    display: none;
+}
+
+.navegacion__elemento a {
+    font-size: 0.9rem;
+}
+/* ------------------------------ Sección Presentación ------------------------------*/
+
+
+/* ------------------------------ Sección sobre mí ----------------------------------*/
+
+
+/*------------------------------ Sección de Habilidades ------------------------------*/
+
+
+/*------------------------------ Sección de Aficiones --------------------------------*/
+
+
+/*------------------------------ Sección de Proyectos --------------------------------*/
+
+
+/*------------------------------ Sección de Contacto ---------------------------------*/
+
+
+/* ------------------------------ Responsividad ---------------------------------------*/
+
+/* Tablets y pantallas más grandes */
+@media (min-width: 768px) {
+    .cabecera {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cabecera__logo {
+        max-width: 100px;
+    }
+
+    .cabecera__titulo {
+        font-size: 8vw;
+    }
+
+    .navegacion__lista {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-top: 0;
+    }
+
+    .navegacion__elemento a {
+        font-size: 1rem;
+    }
+}
+
+/* Pantallas grandes */
+@media (min-width: 1024px) {
+    /* Aquí puedes ajustar aún más el diseño para pantallas grandes */
+    .cabecera__titulo {
+        font-size: 25vw;
+    }
+
+    .navegacion__elemento a {
+        font-size: 1.1rem;
+    }
+}/* Estilo para el contenedor de la sección de presentación */
+.presentacion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    margin: 20px;
+}
+
+/* Aquí irían más estilos que ya tengas definidos */
+
+/* Estilo para el título */
+.sobre-mi__titulo {
+    font-size: 5vw; /* Ajusta el tamaño del título en relación al ancho de la ventana */
+    text-align: left; /* Alinea el título a la izquierda */
+    margin-bottom: 10px; /* Espacio debajo del título */
+    line-height: 1.2; /* Espaciado entre líneas */
+}
+
+/* Estilo para el subtítulo */
+.presentacion__subtitulo {
+    font-family: 'Futura', sans-serif;
+    font-size: 16px;
+    color: darkblue;
+    margin: 10px 0;
+}
+
+/* Aquí comienzan los nuevos estilos */
+.redes {
+    list-style-type: none;
+    padding: 0;
+}
+
+.redes__img a {
+    text-decoration: none;
+    color: darkblue;
+    font-family: 'Futura', sans-serif;
+}
+.presentacion__foto {
+    max-height: 300px; /* Ajusta este valor según la altura deseada */
+    height: auto; /* Mantiene la proporción de la imagen */
+    margin-right: 5px; /* Espaciado entre la imagen y el texto */
+    .sobre-mi {
+        padding: 20px; /* Espacio alrededor de la sección */
+        max-width: 800px; /* Máximo ancho de la sección */
+        margin: 0 auto; /* Centra la sección */
+    }
+    
+    .sobre-mi__titulo {
+        font-size: 12px; /* Ajusta el tamaño del título según tus necesidades */
+        text-align: left; /* Alinea el título a la izquierda */
+        margin-bottom: 10px; /* Espacio debajo del título */
+    }
+    
+    .sobre-mi__texto {
+        font-size: 12px; /* Tamaño de fuente estándar */
+        line-height: 1.5; /* Espaciado entre líneas para mejorar la legibilidad */
+        text-align: justify; /* Justifica el texto para un aspecto más limpio */
+    }
+    
+    .sobre-mi__firma {
+        display: block; /* Asegura que la imagen esté en su propia línea */
+        margin: 20px auto 0; /* Centra la firma horizontalmente y agrega margen superior */
+        max-width: 100%; /* Asegura que la firma no sobrepase el ancho del contenedor */
+        height: auto; /* Mantiene la proporción de la imagen */
+    }
+    .habilidades {
+        display: flex;
+        flex-wrap: wrap; /* Permite que los elementos salten a la siguiente fila si es necesario */
+        justify-content: center; /* Centra los elementos horizontalmente */
+        gap: 20px; /* Espacio entre los elementos */
+        width: 100%; /* Asegura que ocupe todo el ancho */
+    }
+    
+    .habilidades__elemento {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centra los íconos y los nombres */
+        text-align: center;
+        width: 150px; /* Ajusta el ancho de cada habilidad */
+    }
+    
+    .habilidades__icono {
+        max-width: 80px; /* Tamaño de los íconos */
+        margin-bottom: 10px;
+    }
+    
+    .habilidades__nombre {
+        font-size: 1.2rem;
+        font-weight: 700;
+    .contacto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 50px 20px;
+        min-height: 600px; /* Establece una altura mínima para hacer la sección más grande */
+        width: 100%; /* Asegura que ocupe todo el ancho */
+        background-color: #f9f9f9; /* Color de fondo para destacar la sección */
+    }
+    
+    .contacto__formulario {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 600px; /* Limita el ancho del formulario para pantallas más grandes */
+    }
+    
+    .contacto__campo {
+        padding: 15px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1rem;
+        width: 100%;
+    }
+    
+    .contacto__campo--textarea {
+        height: 150px;
+    }
+    
+    .contacto__boton {
+        padding: 15px;
+        background-color: #333;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1.2rem;
+    }
+    
+    /* Adaptación para dispositivos móviles */
+    @media screen and (max-width: 768px) {
+        .contacto {
+            padding: 30px 15px;
+            min-height: 500px; /* Reducimos un poco la altura mínima en pantallas más pequeñas */
+        }
+    
+        .contacto__formulario {
+            max-width: 100%; /* Asegura que el formulario ocupe el ancho completo en pantallas pequeñas */
+        }
+    }
